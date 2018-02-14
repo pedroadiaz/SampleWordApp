@@ -7,10 +7,12 @@
         mc:Ignorable="d"
         Icon="Images/Logo/logo-small.png"
         WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
-        <TextBlock Text="Welcome, friend" FontFamily="{StaticResource LatoRegular}" FontSize="40" />
-        <TextBlock Text="Welcome, friend" FontFamily="{StaticResource LatoThin}" FontSize="40" />
-    </StackPanel>
+        Title="MainWindow" Height="600" Width="900">
+    <WindowChrome.WindowChrome>
+        <WindowChrome
+            ResizeBorderThickness="{Binding}"
+            />
+    </WindowChrome.WindowChrome>
 </Window>
